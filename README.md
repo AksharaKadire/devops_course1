@@ -1,6 +1,6 @@
-# devops_course1
-12-factor app
-Port Binding
+### devops_course1
+## 12-factor app
+# Port Binding
 "port binding" refers to the process of associating a network port on a server with a specific application or service that listens for incoming network connections on that port. Here's a more detailed explanation:
 
 Understanding Ports • Port: In networking, a port is a logical construct that identifies a specific process or service running on a computer within a network. Ports are identified by numbers ranging from 0 to 65535.
