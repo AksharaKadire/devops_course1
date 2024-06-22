@@ -41,7 +41,8 @@ cp /usr/lib/systemd/system/app.service /etc/systemd/system/nano /etc/systemd/sys
 ◦After making changes, reload the systemd daemon to apply the changes:
 systemctl daemon-reload
 
-Summary
-• /usr/lib/systemd/system: Contains default unit files provided by software packages. Managed by the package manager.
-• /etc/systemd/system: Contains custom or overridden unit files. Managed by the system administrator. These files take precedence over the ones in /usr/lib/systemd/system.
+## Summary
+# /usr/lib/systemd/system: Contains default unit files provided by software packages. Managed by the package manager.
+# /etc/systemd/system: Contains custom or overridden unit files. Managed by the system administrator. These files take precedence over the ones in /usr/lib/systemd/system.
+
 Understanding the distinction between these directories is crucial for proper service management and ensuring that custom configurations are persistent and correctly prioritized.
