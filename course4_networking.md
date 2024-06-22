@@ -3,7 +3,9 @@ https://res.cloudinary.com/kodekloud/image/upload/v1702543781/course-resource-ne
 { command for DNS: 
 1. remote conf file: vi /etc/resolv.conf
 2. local conf file: vi /etc/hosts }
+
 ( search yahoo.com - to add as extension for DNS to add in remote sonf file)
+
 ( nslookup command is used to query the DNS server)
    
 ## What is Networking?
