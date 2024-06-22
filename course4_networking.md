@@ -1,4 +1,11 @@
 https://res.cloudinary.com/kodekloud/image/upload/v1702543781/course-resource-new/Networking-Basics.pdf
+
+{ command for DNS: 
+1. remote conf file: vi /etc/resolv.conf
+2. local conf file: vi /etc/hosts }
+( search yahoo.com - to add as extension for DNS to add in remote sonf file)
+( nslookup command is used to query the DNS server)
+   
 ## What is Networking?
 Networking refers to the practice of connecting computers and other devices together to share resources, such as files, internet connections, and printers, as well as to enable communication. Networks can vary in size from a small home network to a large enterprise network and can include various types of devices like computers, servers, routers, switches, and more. Networking involves both hardware components (like cables, switches, routers, and network interface cards) and software components (like network protocols and operating systems).
 
