@@ -1,4 +1,5 @@
 # The paths /usr/lib/systemd/system/app.service and /etc/systemd/system/app.service
+https://res.cloudinary.com/kodekloud/image/upload/v1702543778/course-resource-new/DevOps-Pre-Requisites-v2-1.pdf page35
 ## /usr/lib/systemd/system/app.service
 
 # 1 Purpose:
