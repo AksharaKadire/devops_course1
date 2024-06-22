@@ -1,4 +1,5 @@
 ### devops_course1
+# https://res.cloudinary.com/kodekloud/image/upload/v1704894189/course-resource-new/12-Factor-App.pdf
 ## 12-factor app
 
 Certainly! Let's dive deeper into each of the 12 factors that define the principles of a 12 Factor App. These factors were initially outlined by Heroku and have become a widely adopted set of guidelines for building cloud-native applications that are scalable, maintainable, and suitable for modern DevOps practices.
