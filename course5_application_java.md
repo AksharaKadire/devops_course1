@@ -118,3 +118,60 @@ node /home/add.js
  or
  
 rpmquery nodejs
+
+# What is the npm version preinstalled in host01 server?
+
+npm -v
+
+# Who is author of file package for npm?
+
+Run: npm search file 
+
+check AUTHOR column.
+
+# Install NodeJS file package with npm inside /home/thor/ directory.
+
+Run: cd /home/thor/; npm install file
+
+to install NodeJS file package.
+
+# What is the path for package.json for file package installed in previous step? 
+
+thor@host01 ~$ ls
+node_modules  package-lock.json
+thor@host01 ~$ cd node_modules
+thor@host01 ~/node_modules$ ls
+file
+thor@host01 ~/node_modules$ cd file
+thor@host01 ~/node_modules/file$ ls
+lib  LICENSE  package.json  README.md  tests
+thor@host01 ~/node_modules/file$ 
+
+# Install file module globally with npm.
+
+Run: sudo npm install file -g 
+
+# Where did we install file package in previous step with global option?
+
+Built-in modules are stored in /usr/lib/node_modules/npm/node_modules/ 
+
+while External modules are stored in /usr/lib/node_modules on linux systems.
+
+# Download nodejs application from github in /home/thor/ on host01 server?
+
+Git repo URL for nodejs : https://github.com/contentful/the-example-app.nodejs
+
+Run: cd /home/thor/; git clone https://github.com/contentful/the-example-app.nodejs
+
+# What is the dependency for helmet version in /home/thor/the-example-app.nodejs/package.json on host01 server?
+
+Check dependencies field for helmet in /home/thor/the-example-app.nodejs/package.json.
+
+or 
+
+cat /home/thor/the-example-app.nodejs/package.json | grep helmet
+
+
+
+
+
