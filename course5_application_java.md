@@ -102,3 +102,19 @@ do cd /opt/maven/my-app/; sudo mvn package to build with maven.
 # What is output for main app when you run /opt/maven/my-app/target/my-app-1.0-SNAPSHOT.jar created with maven package?
 
 Execute java -cp /opt/maven/my-app/target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App on host01 server to run jar.
+
+# Help us install NodeJS 16 on host01 server!
+
+sudo yum install nodejs
+
+# To run/see output nodejs
+
+node /home/add.js 
+
+ # to check version
+ 
+ node -v
+
+ or
+ 
+rpmquery nodejs
