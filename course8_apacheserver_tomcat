@@ -32,4 +32,45 @@ After downloading it using the curl command, extract it with tar command :-
   Next, rename the directory to the apache-tomcat-8 and move to the /opt/.
 
 # 4)   sudo mv apache-tomcat-8.5.98 /opt/apache-tomcat-8 
+
+q) Which scripts are used to start and stop tomcat on Linux respectively?
+
+startup.sh and shutdown.sh
+
+in windows: startip.bat and shutdown.bat
+
+# Now run tomcat with default settings. Open the localhost tab to see the tomcat web page in web browser.
+
+Run: sudo /opt/apache-tomcat-8/bin/startup.sh 
+
+run: curl localhost:8081; ps -ef | grep tomcat 
+
+to see tomcat page content and process. Whereas ps command does check active processes running on the system and the resources they are using.
+
+# Now change tomcat port from 8081 to 9090. Open the localhost tab to see the tomcat web page in web browser.
+
+To change the port :-
+
+sudo sed -i 's/8081/9090/g'  /opt/apache-tomcat-8/conf/server.xml;
+
+To shutdown the tomcat server :-
+
+sudo /opt/apache-tomcat-8/bin/shutdown.sh
+
+To start the tomcat server :-
+
+sudo /opt/apache-tomcat-8/bin/startup.sh
+
+and then run
+
+curl localhost:9090; ps -ef | grep tomcat 
+
+to see tomcat page content and process.
+
+
+
+
+
+
+
   
