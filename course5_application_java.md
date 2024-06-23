@@ -95,3 +95,10 @@ Run: sudo yum install -y maven to install maven.
 
 rpmquery maven
 
+# Please compile and package the application inside /opt/maven/my-app/ with maven on host01 server.
+
+do cd /opt/maven/my-app/; sudo mvn package to build with maven.
+
+# What is output for main app when you run /opt/maven/my-app/target/my-app-1.0-SNAPSHOT.jar created with maven package?
+
+Execute java -cp /opt/maven/my-app/target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App on host01 server to run jar.
