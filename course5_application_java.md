@@ -15,7 +15,9 @@ Set path variable with the command as: export PATH=$PATH:/opt/jdk-20/bin
 # We have created MyClass.java file inside /opt/app directory. View it if you like using the command cat MyClass.java. Please compile it.
 
 Run cd /opt/app/; javac MyClass.java to compile 
-or 
+
+(or)
+
 javac /opt/app/MyClass.java
 
 # To print output run: java /opt/app/MyClass.java (or)
