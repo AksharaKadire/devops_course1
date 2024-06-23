@@ -20,7 +20,9 @@ Run cd /opt/app/; javac MyClass.java to compile
 
 javac /opt/app/MyClass.java
 
-# To print output run: java /opt/app/MyClass.java (or)
+# To print output 
+
+run: java /opt/app/MyClass.java (or)
 
 cd /opt/app
 
