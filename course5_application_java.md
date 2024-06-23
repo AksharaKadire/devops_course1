@@ -31,3 +31,67 @@ java MyClass.java
 # Generate documentation for the MyClass.java source code into the /opt/app/doc directory.
 
 Run: cd /opt/app/; javadoc -d doc MyClass.java to document and see an output
+
+# Install the Apache Ant build tool on host01 server
+
+sudo yum install ant -y
+
+# Check the ANT build configuration file /opt/ant/build.xml on host01 server. If you run ant docs command, where will the generated html docs be stored?
+
+cat /opt/ant/build.xml | grep destdir
+
+# if ant jar command runs then where does the html gets stored?
+
+cat /opt/ant/build.xml | grep destfile | grep jar
+
+o/p: 
+
+<jar basedir="/opt/ant/build" destfile="/opt/ant/dist/MyClass.jar" >
+
+# Compile and generate jar package using ant.
+
+Run: ant compile jar inside /opt/ant directory.
+
+# Run ant to carry out all steps specified in the build configuration file /opt/ant/build.xml.
+
+Run: ant inside /opt/ant directory
+
+or
+
+cd /opt/ant
+
+ant
+
+output:
+
+Buildfile: /opt/ant/build.xml
+
+compile:
+    [javac] /opt/ant/build.xml:5: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+jar:
+
+docs:
+  [javadoc] Generating Javadoc
+  [javadoc] Javadoc execution
+  [javadoc] Loading source file /opt/ant/src/MyClass.java...
+  [javadoc] Constructing Javadoc information...
+  [javadoc] Standard Doclet version 1.8.0_412
+  [javadoc] Building tree for all the packages and classes...
+  [javadoc] Building index for all the packages and classes...
+  [javadoc] Building index for all classes...
+
+run:
+     [java] Hello Kodekloud
+
+main:
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+## Install the maven build automation tool on the host01 server.
+
+Run: sudo yum install -y maven to install maven.
+
+rpmquery maven
+
